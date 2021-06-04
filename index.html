@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt="Логотип" class="header__image-logo" />
+          </a>
+          <div class="menu-wrapper">
+            <a href="#" class="header__link">Статьи</a>
+            <a href="#" class="header__link">Новости</a>
+            <a href="#" class="header__link">Горячее</a>
+            <a href="#" class="header__link">HTML</a>
+            <a href="#" class="header__link">CSS</a>
+            <a href="#" class="header__link">JavaScript</a>
+            <a href="#" class="header__link">Web Design</a>
+          </div>
+          <!-- /.menu-wrapper -->
+          <button class="header__button">Оставить заявку</button>
+          <button class="header__button-menu">
+            <img src="img/button-menu.svg" alt="Меню" class="header__image-menu" />
+          </button>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <section class="main">
+      <div class="main__background">
+        <div class="main__card">
+          <div class="main__tabs-content">
+            <ul class="main__list">
+              <li id="one" class="main__element">
+                <img class="main__image" src="img/main-1.png" alt="Фото" />
+                <div class="main__info-1">
+                  <div class="author main__author">
+                    <img
+                      src="img/david.png"
+                      alt="Разработчик: Давид Гуров"
+                      class="main__avatar"
+                    />
+                    <div class="author-group main__author-group">
+                      <span class="author__name main__name">Давид Гуров</span>
+                      <span class="author__position main__position">Разработчик</span>
+                    </div>
+                  </div>
+                  <!-- /.main__author" -->
+                  <strong class="main__tag main__tag--javascript main__tag--margin"
+                    >javascript</strong
+                  >
+                  <h1 class="main__title">Расширение Chrome<br />защищает от атак</h1>
+                  <button class="button main__button">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
+                  </button>
+                </div>
+                <!--/.main__info-->
+              </li>
+              <li id="two" class="main__element">
+                <img class="main__image" src="img/main-2.jpg" alt="Фото" />
+                <div class="main__info-2">
+                  <div class="author main__author">
+                    <img
+                      src="img/polina.jpg"
+                      alt="Разработчик: Полина Харьковская"
+                      class="main__avatar"
+                    />
+                    <div class="author-group">
+                      <span class="author__name main__name">Полина Харьковская</span>
+                      <span class="author__position main__position">Разработчик</span>
+                    </div>
+                  </div>
+                  <strong class="main__tag main__tag--css main__tag--margin">css</strong>
+                  <h1 class="main__title">
+                    Как использовать CSS float после того, как вышел Flexbox
+                  </h1>
+                  <button class="button main__button">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
+                  </button>
+                </div>
+              </li>
+              <li id="three" class="main__element">
+                <img class="main__image" src="img/main-3.jpg" alt="Фото" />
+                <div class="main__info-3">
+                  <div class="author main__author">
+                    <img
+                      src="img/semen.jpg"
+                      alt="Разработчик: Семён Гапонов"
+                      class="main__avatar"
+                    />
+                    <div class="author-group">
+                      <span class="author__name main__name">Семён Гапонов</span>
+                      <span class="author__position main__position">Разработчик</span>
+                    </div>
+                  </div>
+                  <strong class="main__tag main__tag--html main__tag--margin"
+                    >html</strong
+                  >
+                  <h1 class="main__title">
+                    Правильно вставляем картинку<br />на сайт для Retina дисплея
+                  </h1>
+                  <button class="button main__button">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
+                  </button>
+                </div>
+              </li>
+              <li id="four" class="main__element">
+                <img class="main__image" src="img/main-4.jpg" alt="Фото" />
+                <div class="main__info-4">
+                  <div class="author main__author">
+                    <img
+                      src="img/sasha.jpg"
+                      alt="Разработчик: Александра Игнатьева"
+                      class="main__avatar"
+                    />
+                    <div class="author-group">
+                      <span class="author__name main__name">Александра Игнатьева</span>
+                      <span class="author__position main__position">Разработчик</span>
+                    </div>
+                  </div>
+                  <strong class="main__tag main__tag--web main__tag--margin"
+                    >web design</strong
+                  >
+                  <h1 class="main__title">ТОП-10 плагинов для Figma</h1>
+                  <button class="button main__button">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
+                  </button>
+                </div>
+              </li>
+              <li id="five" class="main__element">
+                <img class="main__image" src="img/main-5.png" alt="Фото" />
+                <div class="main__info-5">
+                  <div class="author main__author">
+                    <img
+                      src="img/boris.jpg"
+                      alt="Разработчик: Борис Санников"
+                      class="author__avatar main__avatar"
+                    />
+                    <div class="author-group">
+                      <span class="author__name main__name">Борис Санников</span>
+                      <span class="author__position main__position">Разработчик</span>
+                    </div>
+                  </div>
+                  <strong class="main__tag main__tag--css main__tag--margin">css</strong>
+                  <h1 class="main__title">
+                    Возможности CSS Grid Layout, которые уже можно применять
+                  </h1>
+                  <button class="button main__button">
+                    Читать далее
+                    <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <ul class="main__tabs">
+            <li>
+              <span class="main__recommendation">Рекомендуем</span>
+            </li>
+            <li>
+              <div class="main__delimiter"></div>
+            </li>
+            <li class="main__tab">
+              <a href="#one" class="main__link">
+                <strong class="main__tag main__tag--javascript">javascript</strong>
+                <p class="main__text">Расширение Chrome защищает от атак</p>
+              </a>
+            </li>
+            <li>
+              <div class="main__delimiter"></div>
+            </li>
+            <li class="main__tab">
+              <a href="#two" class="main__link">
+                <strong class="main__tag main__tag--css">css</strong>
+                <p class="main__text">
+                  Как использовать CSS float после того, как вышел Flexbox
+                </p>
+              </a>
+            </li>
+            <li>
+              <div class="main__delimiter"></div>
+            </li>
+            <li class="main__tab">
+              <a href="#three" class="main__link">
+                <strong class="main__tag main__tag--html">html</strong>
+                <p class="main__text">
+                  Правильно вставляем картинку на сайт для Retina дисплея
+                </p>
+              </a>
+            </li>
+            <li>
+              <div class="main__delimiter"></div>
+            </li>
+            <li class="main__tab">
+              <a href="#four" class="main__link">
+                <strong class="main__tag main__tag--web">Web design</strong>
+                <p class="main__text">ТОП-10 плагинов для Figma</p>
+              </a>
+            </li>
+            <li>
+              <div class="main__delimiter"></div>
+            </li>
+            <li class="main__tab">
+              <a href="#five" class="main__link">
+                <strong class="main__tag main__tag--css">css</strong>
+                <p class="main__text">
+                  Возможности CSS Grid Layout , которые уже можно применять
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.main__card -->
+      </div>
+      <!-- /.main__background -->
+    </section>
+    <!-- /.main -->
+  </body>
+</html>
