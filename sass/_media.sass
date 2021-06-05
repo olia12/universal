@@ -22,6 +22,8 @@
       padding: 12px 18px
       width: 223px
       height: 83px
+      &--last
+        height: 93px
     &__title
       margin-bottom: 22px
       max-width: 627px
@@ -48,6 +50,10 @@
       max-height: 15px
   .lifehacks
     padding-top: 103px
+    &__text
+      width: 109px
+  .content
+    display: none
 @media (min-width: 992px)
   .header
     &__link
@@ -56,10 +62,6 @@
     &__button
       &:hover
         background-color: $hover_header_button
-  .main
-    &__tab
-      &:hover
-        background-color: $hover_recommendation
   .lifehacks
     &__card
       &:not(:last-child):after
@@ -105,6 +107,8 @@
       padding: 13px 10px
       width: 196px
       height: 72px
+      &--last
+        height: 73px
     &__title
       margin-bottom: 22px
       max-width: 450px
@@ -149,26 +153,62 @@
       min-width: 319px
       padding: 15px 41px
     &__text
+      width: 154px
       max-height: 60px
 @media (max-width: 767px)
   .container
     max-width: 700px
     width: 87%
-    .header
-      &-wrapper
-        align-items: center
-      &__logo
-        width: 90px
-      &__logo
-        flex-basis: auto
-      &__button
-        display: none
-        &-menu
-          display: block
-          background-color: transparent
-          border: none
+  body
+    padding-top: 61px
+  .header
+    &-wrapper
+      align-items: center
+    &__logo
+      width: 90px
+    &__logo
+      flex-basis: auto
+    &__link
+      max-width: 240px
+      max-height: 42px
+      overflow: auto
+      &--big
+        max-height: 47px
+        overflow: hidden
+    &__button
+      margin-top: 1px
+      max-width: 221px
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+      &-menu
+        display: block
+        background-color: transparent
+        border: none
+    &--mobile_fixed
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 25
     .menu-wrapper
+      flex-direction: column
+      align-items: center
+      height: 320px
+      margin-bottom: 30px
+    &__background-menu
       display: none
+      position: fixed
+      top: 61px
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: $dark
+      &--visible
+        display: flex
+        overflow: auto
   .main
     &__background
       height: 295px

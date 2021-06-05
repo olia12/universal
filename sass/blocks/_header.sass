@@ -20,8 +20,13 @@
     font-size: 14px
     line-height: 20px
     font-weight: 900
+  &__background-menu
+    display: flex
+    justify-content: center
   .menu-wrapper
     margin-top: 6px
+    margin-bottom: 0
+    padding-left: 0
     display: flex
     justify-content: space-between
     width: 540px
@@ -37,5 +42,8 @@
     background-color: #656B70
     color: $light
     text-transform: uppercase
+    &--mobile
+      &_visible
+        display: none
     &-menu
       display: none

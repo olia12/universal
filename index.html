@@ -13,23 +13,33 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--mobile_fixed">
       <div class="container">
         <div class="header-wrapper">
           <a href="index.html" class="header__logo">
             <img src="img/logo.svg" alt="Логотип" class="header__image-logo" />
           </a>
-          <div class="menu-wrapper">
-            <a href="#" class="header__link">Статьи</a>
-            <a href="#" class="header__link">Новости</a>
-            <a href="#" class="header__link">Горячее</a>
-            <a href="#" class="header__link">HTML</a>
-            <a href="#" class="header__link">CSS</a>
-            <a href="#" class="header__link">JavaScript</a>
-            <a href="#" class="header__link">Web Design</a>
+          <div class="header__background-menu">
+            <ul class="menu-wrapper">
+              <li class="header__link"><a href="#">Статьи</a></li>
+              <li class="header__link"><a href="#">Новости</a></li>
+              <li class="header__link"><a href="#">Горячее</a></li>
+              <li class="header__link"><a href="#">HTML</a></li>
+              <li class="header__link"><a href="#">CSS</a></li>
+              <li class="header__link"><a href="#">JavaScript</a></li>
+              <li class="header__link"><a href="#">Web Design</a></li>
+              <li class="header__link header__link--big">
+                <button class="header__button header__button--mobile_visible">
+                  Оставить заявку
+                </button>
+              </li>
+            </ul>
           </div>
+          <!-- /.header__background-menu -->
           <!-- /.menu-wrapper -->
-          <button class="header__button">Оставить заявку</button>
+          <button class="header__button header__button--mobile_hidden">
+            Оставить заявку
+          </button>
           <button class="header__button-menu">
             <img src="img/button-menu.svg" alt="Меню" class="header__image-menu" />
           </button>
@@ -43,7 +53,7 @@
         <div class="main__card">
           <div class="main__tabs-content">
             <ul class="main__list">
-              <li id="one" class="main__element">
+              <li id="one" class="main__element main__element--active">
                 <img class="main__image" src="img/main-1.png" alt="Фото" />
                 <div class="main__info-1">
                   <div class="author main__author">
@@ -58,7 +68,7 @@
                     </div>
                   </div>
                   <!-- /.main__author" -->
-                  <strong class="main__tag main__tag--javascript main__tag--margin"
+                  <strong class="tag tag--javascript main__tag main__tag--margin"
                     >javascript</strong
                   >
                   <h1 class="main__title">Расширение Chrome<br />защищает от атак</h1>
@@ -83,7 +93,7 @@
                       <span class="author__position main__position">Разработчик</span>
                     </div>
                   </div>
-                  <strong class="main__tag main__tag--css main__tag--margin">css</strong>
+                  <strong class="tag tag--css main__tag main__tag--margin">css</strong>
                   <h1 class="main__title">
                     Как использовать CSS float после того, как вышел Flexbox
                   </h1>
@@ -107,9 +117,7 @@
                       <span class="author__position main__position">Разработчик</span>
                     </div>
                   </div>
-                  <strong class="main__tag main__tag--html main__tag--margin"
-                    >html</strong
-                  >
+                  <strong class="tag tag--html main__tag main__tag--margin">html</strong>
                   <h1 class="main__title">
                     Правильно вставляем картинку<br />на сайт для Retina дисплея
                   </h1>
@@ -133,7 +141,7 @@
                       <span class="author__position main__position">Разработчик</span>
                     </div>
                   </div>
-                  <strong class="main__tag main__tag--web main__tag--margin"
+                  <strong class="tag tag--web main__tag main__tag--margin"
                     >web design</strong
                   >
                   <h1 class="main__title">ТОП-10 плагинов для Figma</h1>
@@ -157,7 +165,7 @@
                       <span class="author__position main__position">Разработчик</span>
                     </div>
                   </div>
-                  <strong class="main__tag main__tag--css main__tag--margin">css</strong>
+                  <strong class="tag tag--css main__tag main__tag--margin">css</strong>
                   <h1 class="main__title">
                     Возможности CSS Grid Layout, которые уже можно применять
                   </h1>
@@ -176,18 +184,18 @@
             <li>
               <div class="main__delimiter"></div>
             </li>
-            <li class="main__tab">
-              <a href="#one" class="main__link">
-                <strong class="main__tag main__tag--javascript">javascript</strong>
+            <li data-target="#one" class="main__tab main__tab--active">
+              <a class="main__link">
+                <strong class="tag tag--javascript main__tag">javascript</strong>
                 <p class="main__text">Расширение Chrome защищает от атак</p>
               </a>
             </li>
             <li>
               <div class="main__delimiter"></div>
             </li>
-            <li class="main__tab">
-              <a href="#two" class="main__link">
-                <strong class="main__tag main__tag--css">css</strong>
+            <li data-target="#two" class="main__tab">
+              <a class="main__link">
+                <strong class="tag tag--css main__tag">css</strong>
                 <p class="main__text">
                   Как использовать CSS float после того, как вышел Flexbox
                 </p>
@@ -196,9 +204,9 @@
             <li>
               <div class="main__delimiter"></div>
             </li>
-            <li class="main__tab">
-              <a href="#three" class="main__link">
-                <strong class="main__tag main__tag--html">html</strong>
+            <li data-target="#three" class="main__tab">
+              <a class="main__link">
+                <strong class="tag tag--html main__tag">html</strong>
                 <p class="main__text">
                   Правильно вставляем картинку на сайт для Retina дисплея
                 </p>
@@ -207,18 +215,18 @@
             <li>
               <div class="main__delimiter"></div>
             </li>
-            <li class="main__tab">
-              <a href="#four" class="main__link">
-                <strong class="main__tag main__tag--web">Web design</strong>
+            <li data-target="#four" class="main__tab">
+              <a class="main__link">
+                <strong class="tag tag--web main__tag">Web design</strong>
                 <p class="main__text">ТОП-10 плагинов для Figma</p>
               </a>
             </li>
             <li>
               <div class="main__delimiter"></div>
             </li>
-            <li class="main__tab">
-              <a href="#five" class="main__link">
-                <strong class="main__tag main__tag--css">css</strong>
+            <li data-target="#five" class="main__tab main__tab--last">
+              <a class="main__link">
+                <strong class="tag tag--css main__tag">css</strong>
                 <p class="main__text">
                   Возможности CSS Grid Layout , которые уже можно применять
                 </p>
@@ -260,5 +268,59 @@
       <!-- /.container -->
     </section>
     <!-- /.lifehacks -->
+    <section class="content">
+      <div class="container">
+        <div class="content-wrapper">
+          <div class="content__main-card">
+            <div class="content__main-info">
+              <span class="tag tag--article content__main-tag">Статьи</span>
+              <h2 class="title title--big_black content__main-title">
+                Вам предложили работу мечты, но вы не можете...
+              </h2>
+              <p class="text content__main-text">
+                Как поступить, если хочется пойти на работу мечты, но она находится в
+                другом городе. У вас семья и переезжать вы не готовы.
+              </p>
+            </div>
+            <!-- /.content__info -->
+            <div class="content__main-image-wrapper">
+              <img src="img/car.png" alt="Фото: машина" class="content__main-image" />
+            </div>
+            <div class="content__main-delimiter"></div>
+            <!-- /.content__main-delimiter -->
+            <div class="content__main-footer">
+              <div class="content__main-author-group">
+                <img
+                  src="img/inna.png"
+                  alt="Фото: Инна Квашова"
+                  class="content__main-avatar"
+                />
+                <span class="content__main-name">Инна Квашова:</span>
+              </div>
+              <div class="text content__main-footer-text">
+                Каждый разработчик мечтает переехать в...
+              </div>
+              <div class="message-group content__main-message-group">
+                <img
+                  src="img/message.svg"
+                  alt="Иконка: комментарии"
+                  class="message-group__icon"
+                />
+                <span class="message-group__number">342</span>
+              </div>
+              <!-- /.content__card-footer-text -->
+            </div>
+            <!-- /.content__card-footer -->
+            <!-- /.content__image-wrapper -->
+          </div>
+          <!-- /.content__card -->
+        </div>
+        <!-- /.content-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.content -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
