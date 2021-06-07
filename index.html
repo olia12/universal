@@ -28,10 +28,8 @@
               <li class="header__link"><a href="#">CSS</a></li>
               <li class="header__link"><a href="#">JavaScript</a></li>
               <li class="header__link"><a href="#">Web Design</a></li>
-              <li class="header__link header__link--big">
-                <button class="header__button header__button--mobile_visible">
-                  Оставить заявку
-                </button>
+              <li class="header__link header__link--mobile_visible header__link--big">
+                <button class="header__button">Оставить заявку</button>
               </li>
             </ul>
           </div>
@@ -48,6 +46,8 @@
       </div>
       <!-- /.container -->
     </header>
+    <!-- /.header -->
+
     <section class="main">
       <div class="main__background">
         <div class="main__card">
@@ -268,10 +268,11 @@
       <!-- /.container -->
     </section>
     <!-- /.lifehacks -->
+
     <section class="content">
       <div class="container">
         <div class="content-wrapper">
-          <div class="content__main-card">
+          <div class="content__main-card main-card">
             <div class="content__main-info">
               <span class="tag tag--article content__main-tag">Статьи</span>
               <h2 class="title title--big_black content__main-title">
@@ -282,12 +283,11 @@
                 другом городе. У вас семья и переезжать вы не готовы.
               </p>
             </div>
-            <!-- /.content__info -->
+            <!-- /.content__main-info -->
             <div class="content__main-image-wrapper">
               <img src="img/car.png" alt="Фото: машина" class="content__main-image" />
             </div>
             <div class="content__main-delimiter"></div>
-            <!-- /.content__main-delimiter -->
             <div class="content__main-footer">
               <div class="content__main-author-group">
                 <img
@@ -308,12 +308,187 @@
                 />
                 <span class="message-group__number">342</span>
               </div>
-              <!-- /.content__card-footer-text -->
+              <!-- /.content__main-message-group -->
             </div>
-            <!-- /.content__card-footer -->
-            <!-- /.content__image-wrapper -->
+            <!-- /.content__main-footer -->
           </div>
-          <!-- /.content__card -->
+          <!-- /.content__main-card -->
+
+          <div class="content__popular-card popular-card">
+            <img
+              src="img/popular.jpg"
+              alt="Фото: популярное"
+              class="content__popular-image"
+            />
+            <span class="content__popular-mark">Популярное</span>
+            <strong class="tag tag--web_light content__popular-tag">Web design</strong>
+            <h2 class="title title--small_light content__popular-title">
+              Где взять реальные проекты для портфолио
+            </h2>
+            <div class="content__popular-footer">
+              <div class="content__popular-footer-avatar">
+                <img src="img/inna.png" alt="" />
+              </div>
+              <div class="content__popular-footer-info">
+                <div class="text content__popular-footer-name">Сара Женникова</div>
+                <div class="date date--light content__popular-footer-date">
+                  25 сентября
+                </div>
+                <div class="message-group">
+                  <img
+                    src="img/message-light.svg"
+                    alt="Иконка: комментарии"
+                    class="message-group__icon message-group__icon--light"
+                  />
+                  <span class="message-group__number message-group__number--light"
+                    >16</span
+                  >
+                </div>
+                <!-- /.content__popular-message-group -->
+                <div class="like-group">
+                  <img
+                    src="img/like-light.svg"
+                    alt="Иконка: лайк"
+                    class="like-group__icon like-group__icon--light"
+                  />
+                  <span class="like-group__number like-group__number--light">832</span>
+                </div>
+                <!-- /.like-group -->
+              </div>
+            </div>
+          </div>
+          <!-- /.content__popular-card -->
+
+          <div class="content__checklist-card checklist-card">
+            <div class="content__checklist-top">
+              <div class="content__checklist-image-wrapper">
+                <img
+                  class="content__checklist-image"
+                  src="img/file.png"
+                  alt="Картинка: файл"
+                />
+              </div>
+              <!-- /.content__checklist-image -->
+              <div class="content__checklist-info">
+                <h2 class="title title--small_light content__checklist-title">
+                  Чек-лист сдачи верстки вашему заказчику
+                </h2>
+                <div class="text content__checklist-weight">PDF, 125 Мб</div>
+              </div>
+              <!-- /.content__checklist-info -->
+            </div>
+            <!-- /.content__checklist-top -->
+            <a class="content__checklist-bottom" href="чек-лист.pdf" download>
+              <img
+                class="content__checklist-download"
+                src="img/download.svg"
+                alt="Скачать"
+              />
+              <span class="text content__checklist-link">Скачать</span>
+            </a>
+            <!-- /.content__checklist-bottom -->
+          </div>
+          <!-- /.content__checklist-card -->
+
+          <div class="content__photo-card photo-card">
+            <div class="content__photo-wrapper">
+              <img
+                src="img/photo.png"
+                alt="Фото: 20+ инструментов для js-разработчика"
+                class="content__photo-image"
+              />
+            </div>
+            <!-- /.content__photo-wrapper -->
+            <div class="title title--small_black content__photo-title">
+              20+ инструментов для js&#8209;разработчика
+            </div>
+            <!-- /.content__photo-title -->
+          </div>
+          <!-- /.content__photo-card -->
+
+          <div class="content__card card-1">
+            <h2 class="title title--small_black content__card-title">
+              Удачные референсы
+            </h2>
+            <p class="text content__card-text">
+              Как выбрать подходящие исходники, если вы ищите идею для интерфейса
+            </p>
+            <span class="date content__card-date">15 октября</span>
+          </div>
+          <!-- /.content__card-1 -->
+
+          <div class="content__card card-2">
+            <h2 class="title title--small_black content__card-title">
+              Заказчики — мудаки?
+            </h2>
+            <p class="text content__card-text">
+              Как защититься от бесконечных правок на этапе сдачи проекта
+            </p>
+            <span class="date content__card-date">20 октября</span>
+          </div>
+          <!-- /.content__card-2 -->
+
+          <div class="content__card card-3">
+            <h2 class="title title--small_black content__card-title">
+              Работа без стресса — это...
+            </h2>
+            <p class="text content__card-text">
+              Обустройте свое рабочее место так, чтобы не испытывать раздражение от
+              скрипучего...
+            </p>
+            <span class="date content__card-date">26 октября</span>
+          </div>
+          <!-- /.content__card-3 -->
+
+          <div class="content__card card-4">
+            <h2 class="title title--small_black content__card-title">
+              Бесплатные методы...
+            </h2>
+            <p class="text content__card-text">
+              Как не платить за софт, если у вас есть студенческий билет высшего учебного
+              заведения
+            </p>
+            <span class="date content__card-date">13 октября</span>
+          </div>
+          <!-- /.content__card-3 -->
+
+          <div class="content__tags-card tags-card">
+            <h3 class="text content__tags-title">теги</h3>
+            <div class="content__tags-delimiter"></div>
+            <div class="content__tags-wrapper">
+              <div class="text content__tags-tag">Forest</div>
+              <div class="text content__tags-tag">Hover tag</div>
+              <div class="text content__tags-tag">Nature</div>
+              <div class="text content__tags-tag">Recreation</div>
+              <div class="text content__tags-tag">Tent</div>
+              <div class="text content__tags-tag">Fresh air</div>
+              <div class="text content__tags-tag">Summer</div>
+              <div class="text content__tags-tag">Mountains</div>
+              <div class="text content__tags-tag">Wood</div>
+              <div class="text content__tags-tag">Map</div>
+              <div class="text content__tags-tag">Sun</div>
+              <div class="text content__tags-tag">Wild animals</div>
+              <div class="text content__tags-tag">Night</div>
+            </div>
+            <!-- /.content__tags-wrapper -->
+          </div>
+          <!-- /.content__tags-card -->
+
+          <div class="content__social-network-card social-network-card">
+            <h2 class="title title--medium_black content__social-network-title">
+              Наши соцсети
+            </h2>
+            <div class="content__social-network-wrapper">
+              <img src="img/facebook.svg" alt="Icon: facebook" />
+            </div>
+            <div class="content__social-network-wrapper">
+              <img src="img/twitter.svg" alt="Icon: twitter" />
+            </div>
+            <div class="content__social-network-wrapper">
+              <img src="img/youtube.svg" alt="Icon: youtube" />
+            </div>
+          </div>
+          <!-- /.content__social-network-card -->
         </div>
         <!-- /.content-wrapper -->
       </div>
