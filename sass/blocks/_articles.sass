@@ -1,0 +1,75 @@
+.articles
+  padding-top: 60px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat (2, 1fr)
+    grid-auto-rows: min-content
+    column-gap: 29px
+  &__main
+    grid-column: 1
+    border-radius: 10px
+    overflow: hidden
+    background-color: $light
+  &__recent
+    grid-column: 2
+    width: 263px
+    background-color: $light
+    border-radius: 10px
+    overflow: hidden
+  &__card
+    display: flex
+    padding: 25px 25px 24px 25px
+  &__delimiter
+    width: 798px
+    height: 1px
+    background-color: #D9DADB
+    margin-left: 25px
+  &__info
+    display: flex
+    flex-direction: column
+    position: relative
+  &__tag
+    display: block
+    margin-top: 4px
+    width: 267px
+    height: 15px
+    margin-bottom: 15px
+    overflow: auto
+  &__bookmark
+    &-wrapper
+      position: absolute
+      top: 0
+      right: 0
+      width: 20px
+      height: 20px
+  &__image
+    object-fit: cover
+    &-wrapper
+      flex-shrink: 0
+      margin-right: 25px
+      width: 336px
+      height: 195px
+  &__title
+    width: 437px
+    max-height: 50px
+    margin-bottom: 11px
+    overflow: auto
+  &__text
+    width: 437px
+    height: 60px
+    flex-grow: 1
+    margin-bottom: 20px
+    overflow: auto
+  &__rating
+    display: flex
+    margin-bottom: 5px
+  &__date
+    margin-right: 11px
+    max-width: 64px
+    overflow: auto
+    height: 15px
+  &__message-number
+    margin-right: 11.12px
+path
+  &.active
+    fill: #FF4F52

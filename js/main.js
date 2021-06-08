@@ -17,3 +17,10 @@ menuButton.addEventListener("click", function () {
     .querySelector(".header__background-menu")
     .classList.toggle("header__background-menu--visible");
 });
+
+$(document).on("click", ".jquery path", function () {
+  $(this).toggleClass("active");
+});
+$(document).on("click", ".bookmark-path path", function () {
+  $(this)[0].classList.toggle("active");
+});
