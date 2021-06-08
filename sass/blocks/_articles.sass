@@ -3,19 +3,14 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat (2, 1fr)
-    grid-auto-rows: min-content
+    grid-template-rows: 770px, 700px
     column-gap: 29px
   &__main
     grid-column: 1
+    grid-row: span 2
     border-radius: 10px
     overflow: hidden
     background-color: $light
-  &__recent
-    grid-column: 2
-    width: 263px
-    background-color: $light
-    border-radius: 10px
-    overflow: hidden
   &__card
     display: flex
     padding: 25px 25px 24px 25px
@@ -65,11 +60,73 @@
     margin-bottom: 5px
   &__date
     margin-right: 11px
-    max-width: 64px
+    max-width: 68px
     overflow: auto
     height: 15px
   &__message-number
     margin-right: 11.12px
+    max-width: 60px
+    height: 15px
+    overflow: auto
+  &__like-number
+    max-width: 60px
+    height: 15px
+    overflow: auto
+  &__recent
+    grid-column: 2
+    grid-row: 1
+    background-color: $light
+    border-radius: 10px
+    overflow: hidden
+    &-card
+      position: relative
+      display: flex
+      padding: 18px 25px 16px 25px
+    &-bc-number
+      position: absolute
+      top: 22px
+      right: 25px
+      width: 41px
+      height: 50px
+      opacity: 0.8
+    &-delimiter
+      width: 213px
+      height: 1px
+      margin-left: 25px
+      background-color: #D9DADB
+    &-wrapper
+      flex-shrink: 0
+      margin-right: 10px
+      width: 60px
+      height: 60px
+    &-image
+      object-fit: cover
+    &-title
+      padding: 20px 10px 17px 26px
+      height: 59px
+      overflow: auto
+      border-bottom: 1px solid #D9DADB
+      text-transform: uppercase
+      font-weight: 900
+      letter-spacing: 0.5px
+    &-readmore
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 45px
+      overflow: auto
+      border-top: 1px solid #D9DADB
+      font-weight: 900
+    &-name
+      width: 143px
+      height: 40px
+      overflow: auto
+      margin-bottom: 5px
+    &-time
+      display: block
+      width: 143px
+      height: 15px
+      overflow: auto
 path
   &.active
     fill: #FF4F52
