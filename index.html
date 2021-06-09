@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -1078,7 +1079,87 @@
     </section>
     <!-- /.articles -->
 
+    <section class="hints">
+      <div class="container">
+        <!-- Все карточки -->
+        <div class="hints-wrapper">
+          <!-- Карточка-слайдер -->
+          <div class="hints__card-slider">
+            <div class="hints__card-slider-mark">Горячее</div>
+            <div class="hints__card-slider-info">
+              <img
+                src="img/hints-avatar.png"
+                alt="Фото: Оксана Пушкина"
+                class="hints__card-slider-avatar"
+              />
+              <span class="hints__card-slider-name">Оксана Пушкина</span>
+              <span class="hints__card-slider-position">Фотограф</span>
+              <h2 class="title title--large_light hints__card-slider-title">
+                Выбор читателей: где удобнее работать фрилансеру
+              </h2>
+              <button class="button hints__card-slider-button">
+                <img
+                  src="img/Images.svg"
+                  alt=""
+                  class="hints__card-slider-button-image"
+                />
+                Смотреть фото
+                <span class="hints__card-slider-button-number">26</span>
+              </button>
+            </div>
+
+            <!-- Обертка слайдера -->
+            <div class="swiper-container hints__swiper-container">
+              <!-- Обязательная обертка слайдера -->
+              <div class="swiper-wrapper hints__swiper-wrapper">
+                <!-- Слайдеры -->
+                <!-- Слайдер 1 -->
+                <div class="swiper-slide hints__swiper-slide">
+                  <img src="img/hints-slide-1.jpg" alt="" class="hints__swiper-image" />
+                </div>
+
+                <!-- Сладер 2 -->
+                <div class="swiper-slide hints__swiper-slide">
+                  <img src="img/hints-slide-2.jpg" alt="" class="hints__slider-image" />
+                </div>
+
+                <!-- Сладер 3 -->
+                <div class="swiper-slide hints__swiper-slide">
+                  <img src="img/hints-slide-3.jpg" alt="" class="hints__slider-image" />
+                </div>
+
+                <!-- Сладер 4 -->
+                <div class="swiper-slide hints__swiper-slide">
+                  <img src="img/hints-slide-4.jpg" alt="" class="hints__slider-image" />
+                </div>
+                <!-- Сладер 5 -->
+                <div class="swiper-slide hints__swiper-slide">
+                  <img src="img/hints-slide-5.jpg" alt="" class="hints__slider-image" />
+                </div>
+              </div>
+              <!-- /.swiper-wrapper -->
+
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /.hints__card-slider -->
+
+          <div class="hints__card-career"></div>
+          <!-- /.hints__card-career -->
+          <a href="#" class="hints__card-1"></a>
+          <!-- /.hints__card-1 -->
+          <a href="#" class="hints__card-2"></a>
+          <!-- /.hints__card-2 -->
+        </div>
+        <!-- /.hints-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hints -->
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>
