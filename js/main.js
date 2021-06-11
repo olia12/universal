@@ -1,3 +1,4 @@
+// Табы
 $(document).ready(function () {
   var tabsItem = $(".main__tab");
   var contentItem = $(".main__element");
@@ -11,6 +12,7 @@ $(document).ready(function () {
   });
 });
 
+// Открытие меню мобильного
 var menuButton = document.querySelector(".header__button-menu");
 menuButton.addEventListener("click", function () {
   document
@@ -25,6 +27,7 @@ $(document).on("click", ".bookmark-path path", function () {
   $(this)[0].classList.toggle("active");
 });
 
+// Слайдер
 const swiper = new Swiper(".swiper-container", {
   // Optional parameters
   loop: true,
@@ -37,4 +40,35 @@ const swiper = new Swiper(".swiper-container", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+//Якоря
+$(window).on("resize", function () {
+  if ($(window).width() > 767) {
+    $(".header__link a").bind("click", function (e) {
+      var anchor = $(this);
+      $("html, body")
+        .stop()
+        .animate(
+          {
+            scrollTop: $(anchor.attr("href")).offset().top - 0,
+          },
+          1000
+        );
+      e.preventDefault();
+    });
+  } else {
+    $(".header__link a").bind("click", function (e) {
+      var anchor = $(this);
+      $("html, body")
+        .stop()
+        .animate(
+          {
+            scrollTop: $(anchor.attr("href")).offset().top - 62,
+          },
+          1000
+        );
+      e.preventDefault();
+    });
+  }
 });
