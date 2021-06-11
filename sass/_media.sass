@@ -202,6 +202,14 @@
       &-container
         width: 467px
         height: 500px
+  .footer
+    &__line
+      &--categories
+        width: 140px
+    &__title
+      width: 140px
+    &__text
+      width: 140px
 
 @media (min-width: 992px)
   .header
@@ -227,7 +235,6 @@
       &-wrapper
         &:hover
           opacity: 0.7
-
 @media (max-width: 992px)
   .container
     width: 722px
@@ -563,6 +570,43 @@
       margin-left: 0
       font-size: 30px
       line-height: 40px
+  .footer
+    &-card-wrapper
+      grid-template-columns: 1fr 1fr 200px
+      row-gap: 20px
+    &__line
+      &--categories
+        width: 200px
+      &--video-lessons
+        width: 200px
+    &__courses
+      grid-column: 1 / 2
+      grid-row: 2
+    &__information
+      grid-column: 2 / 3
+      grid-row: 2
+    &__categories
+      grid-column: 3 / 4
+      grid-row: 2
+    &__title
+      margin-bottom: 20px
+    &__text
+      margin-bottom: 12px
+    &__info
+      justify-content: center
+      margin-left: 0
+    &__social-networks
+      flex-grow: 1
+      justify-content: center
+    &__copyrigh
+      width: 221px
+      height: 20px
+    &__description
+      width: 643px
+      height: 51px
+    &__link
+      &:last-child
+        margin-right: 0
 
 @media (max-width: 767px)
   .container
@@ -942,10 +986,10 @@
         grid-column: 1
         grid-row: 2
         &-wrapper
-          height: 214px
+          height: 223px
           width: 100%
         &-image
-          height: 214px
+          height: 223px
           width: 100%
         &-info
           padding: 13px 10px
@@ -958,8 +1002,8 @@
           line-height: 20px
           margin-bottom: 10px
         &-text
-          width: 180px
-          height: 51px
+          width: 174px
+          height: 60px
           margin-bottom: 10px
         &-button
           max-width: 240px
@@ -995,6 +1039,44 @@
       line-height: 30px
     &__input
       width: 281px
+  .footer
+    &-card-wrapper
+      grid-template-columns: 1fr 1fr 30%
+    &__line
+      &--categories
+        width: 100%
+      &--video-lessons
+        width: 100%
+    &__title
+      margin-bottom: 15px
+    &__text
+      margin-bottom: 9px
+    &__footnote
+      flex-wrap: wrap
+    &__copyrigh
+      width: 300px
+      text-align: start
+    &__description
+      width: 100%
+      flex-basis: 100%
+      height: 45px
+      margin-bottom: 20px
+    &__logo
+      width: 45px
+      height: 45px
+    &__link
+      font-size: 11px
+      line-height: 18px
+    &__info
+      width: 84%
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      flex-grow: 0
+      margin-left: 30px
+    &--info-wrapper
+      flex-direction: column
+      justify-content: space-between
 
 @media (max-width: 567px)
   .main
@@ -1089,6 +1171,63 @@
       padding: 6px 20px
       font-size: 10px
       line-height: 20px
+  .footer
+    &-card-wrapper
+      grid-template-columns: 1fr 1fr
+      row-gap: 10px
+    &__line
+      margin-bottom: 25px
+    &__news
+      grid-column: 1 / 2
+      grid-row: 1
+    &__articles
+      grid-column: 2 / 3
+      grid-row: 1
+    &__video-lessons
+      grid-column: 1 / 2
+      grid-row: 2
+    &__courses
+      grid-column: 2 / 3
+      grid-row: 2
+    &__information
+      grid-column: 1 / 2
+      grid-row: 3
+    &__categories
+      grid-column: 2 / 3
+      grid-row: 3
+    &__title
+      width: 135px
+    &__text
+      width: 135px
+    &__logo
+      width: 40px
+      height: 40px
+    &__social-networks
+      margin-top: 25px
+      justify-content: space-between
+      width: 243px
+    &__social-network
+      &-wrapper
+        margin-left: 0
+    &__info
+      width: 196px
+      margin-left: 15px
+      justify-content: space-between
+    &-info-wrapper
+      justify-content: space-between
+    &__link
+      &:nth-child(2)
+        margin-right: 0
+    &__description
+      height: 75px
+      font-size: 11px
+    &__copyrigh
+      font-size: 11px
+    &__delimiter-up
+      margin-top: 25px
+    &__footnote
+      padding-top: 25px
+      padding-bottom: 30px
 
 @media (max-width: 992px) and (min-width: 767px)
   .lifehacks

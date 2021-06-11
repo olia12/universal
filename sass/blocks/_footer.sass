@@ -1,0 +1,117 @@
+.footer
+  background-color: $light
+  &-card-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 165px
+    grid-auto-rows: min-content
+  &__news
+    grid-column: 1 / 2
+  &__articles
+    grid-column: 2 / 3
+  &__video-lessons
+    grid-column: 3 / 4
+  &__courses
+    grid-column: 4 / 5
+  &__information
+    grid-column: 5 / 6
+  &__categories
+    grid-column: 6 / 7
+  &__card
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+  &__line
+    width: 100%
+    height: 5px
+    margin-bottom: 32px
+    &--news
+      background-color: #FF4F52
+    &--articles
+      background-color: #AC8EE3
+    &--video-lessons
+      background-color: #4592FF
+    &--courses
+      background-color: #FFA34D
+    &--information
+      background-color: #3DC47E
+    &--categories
+      background-color: #6E99AE
+      width: 165px
+  &__title
+    width: 165px
+    height: 20px
+    margin-bottom: 25px
+    font-weight: bold
+    overflow: auto
+  &__text
+    width: 165px
+    height: 20px
+    margin-bottom: 15px
+    overflow: auto
+  &__delimiter
+    &-up
+      width: 100%
+      height: 1px
+      background-color: #D9DADB
+      margin-top: 49px
+    &-down
+      width: 100%
+      height: 1px
+      background-color: #D9DADB
+  &__logo
+    width: 50px
+    height: 50px
+  &-info
+    &-wrapper
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      padding-top: 30px
+      padding-bottom: 29px
+  &__info
+    display: flex
+    flex-grow: 1
+    margin-left: 30px
+  &__link
+    display: block
+    max-width: 150px
+    height: 20px
+    overflow: auto
+    margin-right: 29px
+    font-family: Lato
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    color: $dark
+    text-transform: uppercase
+  &__social-networks
+    display: flex
+  &__social-network
+    &-wrapper
+      display: block
+      margin-left: 15px
+      margin-bottom: 3px
+      width: 40px
+      height: 40px
+    &-image
+      width: 40px
+      height: 40px
+  &__footnote
+    display: flex
+    justify-content: space-between
+    padding-top: 40px
+    padding-bottom: 55px
+  &__description
+    color: #939699
+    width: 750px
+    height: 40px
+    overflow: auto
+  &__copyrigh
+    display: block
+    width: 189px
+    text-align: end
+    height: 22px
+    overflow: auto
+    color: #939699
