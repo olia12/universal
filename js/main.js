@@ -72,3 +72,35 @@ $(window).on("resize", function () {
     });
   }
 });
+
+//Переход на статью при нажатии на кнопку
+$(".button").on("click", function () {
+  window.location.href = $(this).attr("url");
+});
+
+//Модальное окно
+var modalButton = $("[data-togle=modal]");
+  var closeModalButton = $(".modal__close");
+  modalButton.on("click", openModal);
+  closeModalButton.on('click', closeModal)
+
+  function openModal(){
+    var madalOverlay = $(".modal__overlay");
+    var madalDialog = $(".modal__dialog");
+    madalOverlay.addClass('modal__overlay--visible');
+    madalDialog.addClass('modal__dialog--visible');
+  }
+
+    function closeModal(event){
+    event.preventDefault()
+    var madalOverlay = $(".modal__overlay");
+    var madalDialog = $(".modal__dialog");
+    madalOverlay.removeClass('modal__overlay--visible');
+    madalDialog.removeClass('modal__dialog--visible');
+  }
+
+  $(document).keyup(function(e) {
+	if (e.key === "Escape" || e.keyCode === 27) {
+		closeModal(e);
+	}
+})

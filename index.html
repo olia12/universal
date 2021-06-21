@@ -36,13 +36,13 @@
               <li class="header__link"><a href="#footer">JavaScript</a></li>
               <li class="header__link"><a href="#footer">Web Design</a></li>
               <li class="header__link header__link--mobile_visible header__link--big">
-                <button class="header__button">Оставить заявку</button>
+                <button data-togle="modal" class="header__button" >Оставить заявку</button>
               </li>
             </ul>
           </div>
           <!-- /.header__background-menu -->
           <!-- /.menu-wrapper -->
-          <button class="header__button header__button--mobile_hidden">
+          <button data-togle="modal" class="header__button header__button--mobile_hidden">
             Оставить заявку
           </button>
           <button class="header__button-menu">
@@ -79,7 +79,7 @@
                     >javascript</strong
                   >
                   <h1 class="main__title">Расширение Chrome<br />защищает от атак</h1>
-                  <button class="button main__button">
+                  <button class="button main__button" url="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -104,7 +104,7 @@
                   <h1 class="main__title">
                     Как использовать CSS float после того, как вышел Flexbox
                   </h1>
-                  <button class="button main__button">
+                  <button class="button main__button" url="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -128,7 +128,7 @@
                   <h1 class="main__title">
                     Правильно вставляем картинку<br />на сайт для Retina дисплея
                   </h1>
-                  <button class="button main__button">
+                  <button class="button main__button" url="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -152,7 +152,7 @@
                     >web design</strong
                   >
                   <h1 class="main__title">ТОП-10 плагинов для Figma</h1>
-                  <button class="button main__button">
+                  <button class="button main__button" url="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -176,7 +176,7 @@
                   <h1 class="main__title">
                     Возможности CSS Grid Layout, которые уже можно применять
                   </h1>
-                  <button class="button main__button">
+                  <button class="button main__button" url="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -533,7 +533,7 @@
         <h1 class="title title--large_light money__title">
           Расследование недели: сколько зарабатывает веб разработчик в Москве
         </h1>
-        <button class="button money__button">
+        <button class="button money__button" url="article.html">
           Читать статью
           <img src="img/arrow.svg" alt="Стрелка" class="money__arrow" />
         </button>
@@ -1103,7 +1103,7 @@
               <h2 class="title title--large_light hints__card-slider-title">
                 Выбор читателей: где удобнее работать фрилансеру
               </h2>
-              <button class="button hints__card-slider-button">
+              <button class="button hints__card-slider-button" url="article.html">
                 <img
                   src="img/Images.svg"
                   alt=""
@@ -1187,7 +1187,7 @@
                   Каверзные и не очень вопросы, которых боятся новички, когда идут на
                   собеседование
                 </p>
-                <button class="button hints__card-career-button">
+                <button class="button hints__card-career-button" url="article.html">
                   Читать далее
                   <img
                     src="img/arrow.svg"
@@ -1311,12 +1311,14 @@
         <!-- /.footer-card-wrapper -->
         <div class="footer__delimiter-up"></div>
         <div class="footer-info-wrapper">
-          <img src="img/logo-footer.svg" alt="Логотип" class="footer__logo" />
+          <a href="index.html" class="footer__logo-link">
+            <img src="img/logo-footer.svg" alt="Логотип" class="footer__logo"
+          /></a>
           <div class="footer__info">
             <a href="#" class="footer__link">Контакты</a>
             <a href="#" class="footer__link">Работа у нас</a>
             <a href="#" class="footer__link">Реклама</a>
-            <a href="#" class="footer__link">Обратная связь</a>
+            <a data-togle="modal" class="footer__link">Обратная связь</a>
           </div>
           <!-- /.footer__info -->
           <div class="footer__social-networks">
@@ -1382,6 +1384,39 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
+    <div class="modal">
+
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <h2 class="title modal__title">Обратная связь</h2>
+        <form action="#" class="form modal__form">
+          <span class="text modal__name">Тема</span>
+          <select required class="text input modal__select">
+            <option value="" class="modal__select-selected"  disabled selected hidden>Выберите тему</option>
+            <option class="modal__option" value="">Тема 1</option>
+            <option class="modal__option" value="">Тема 2</option>
+          </select>
+          <span class="text modal__name">Сообщение</span>
+          <textarea type="text" class="modal__message input"></textarea>
+          <span class="text modal__name">Email</span>
+          <input type="text" class="input modal__email">
+          <div class="modal__data-processing data-processing">
+            <input class="data-processing__checkbox" type="checkbox" name="data_processing" id="data_processing" checked>
+            <label for="data_processing" class="text data-processing__label">Согласен с обработкой данных</label>
+          </div>
+          <!-- /.modal__data-processing -->
+          <button class="button modal__button">Отправить</button>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+
+    </div>
+    <!-- /.modal -->
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>

@@ -1,0 +1,95 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity .2s
+    background: rgba(40, 47, 54, 0.8)
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    position: fixed
+    overflow-y: auto
+    max-height: 100%
+    top: 50%
+    left: 50%
+    padding: 33px 88px
+    border-radius: 10px
+    overflow: hidden
+    transform: translate(-50%, -50%)
+    background-color: $light
+    max-width: 360px
+    padding: 30px 35px 40px 35px
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity .2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    width: 16px
+    height: 16px
+    position: absolute
+    right: 16px
+    top: 17px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    margin-bottom: 25px
+    font-size: 20px
+    line-height: 25px
+  &__form
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+  &__name
+    margin-bottom: 5px
+    font-weight: 900
+  &__select
+    padding: 10px 40px 8px 15px
+    appearance: none
+    background: url(../img/select.svg) no-repeat right center
+    outline: 0
+    background-size: auto
+    background-position: right 13px top 50%, 0 0
+    &:invalid:not(:focus)
+      color: #939699
+    &:invalid:focus
+      color: #939699
+    &:focus option
+      color: initial
+  &__message
+    height: 120px
+    resize: none
+  &__email
+  &__data-processing
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    color: #4B5157
+  &__button
+    padding: 10px 25px
+    width: 122px
+.form
+.input
+  padding: 8px 15px
+  margin-bottom: 15px
+  width: 290px
+  min-height: 40px
+  outline: none
+  border: 1px solid #D9DADB
+  border-radius: 5px
+  background-color: $light
+  outline: none
+.data-processing
+  &__checkbox
+    margin-right: 10px
+    width: 20px
+    height: 20px
