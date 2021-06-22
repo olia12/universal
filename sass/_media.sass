@@ -620,7 +620,7 @@
     max-width: 700px
     width: 87%
   body
-    padding-top: 61px
+    padding-top: 53px
   .header
     &-wrapper
       align-items: center
@@ -660,9 +660,10 @@
       height: 382px
       margin-bottom: 30px
     &__background-menu
+      padding-top: 30px
       display: none
       position: fixed
-      top: 61px
+      top: 53px
       left: 0
       right: 0
       bottom: 0
@@ -1085,6 +1086,12 @@
     &--info-wrapper
       flex-direction: column
       justify-content: space-between
+  .modal
+    &__button
+      font-size: 10px
+      line-height: 20px
+      height: 32px
+      padding: 6px 25px
 
 @media (max-width: 567px)
   .main
@@ -1236,7 +1243,9 @@
     &__footnote
       padding-top: 25px
       padding-bottom: 30px
-
+  .modal
+    .input
+      width: 210px
 @media (max-width: 992px) and (min-width: 767px)
   .lifehacks
     &__delimiter
