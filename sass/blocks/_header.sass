@@ -5,6 +5,9 @@
   font-style: normal
   font-size: 14px
   line-height: 20px
+  &--light_theme
+    background-color: $light
+    padding-bottom: 9px
   &-wrapper
     display: flex
     flex-wrap: wrap
@@ -23,9 +26,14 @@
     &--mobile
       &_visible
         display: none
+    &--dark
+      color: #939699
   &__background-menu
     display: flex
     justify-content: center
+    background-color: #262d33
+    &--light
+      background-color: $light
   .menu-wrapper
     margin-top: 6px
     margin-bottom: 0
@@ -33,6 +41,9 @@
     display: flex
     justify-content: space-between
     width: 540px
+    &--light
+      margin-top: -4px
+      width: 529px
   &__button
     max-width: 292px
     max-height: 58px

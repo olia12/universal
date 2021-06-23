@@ -64,7 +64,7 @@ $(window).on("resize", function () {
         .stop()
         .animate(
           {
-            scrollTop: $(anchor.attr("href")).offset().top - 62,
+            scrollTop: $(anchor.attr("href")).offset().top - 53,
           },
           1000
         );
@@ -75,7 +75,7 @@ $(window).on("resize", function () {
 
 //Переход на статью при нажатии на кнопку
 $(".button").on("click", function () {
-  window.location.href = $(this).attr("url");
+  window.location.href = $(this).attr("formaction");
 });
 
 //Модальное окно

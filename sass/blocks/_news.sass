@@ -1,0 +1,83 @@
+.news
+  background-image: url(../img/article-back.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba($dark,.75)
+  &__content
+    position: relative
+    padding: 61px 98px 72px
+  &__top-wrapper
+    margin-bottom: 50px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__tag
+  &__navigation
+    display: flex
+  &__title
+    width: 750px
+    height: 220px
+    margin-bottom: 21px
+    overflow: auto
+  &__text
+    width: 632px
+    height: 90px
+    margin-bottom: 42px
+    overflow: auto
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    color: $light
+    opacity: 0.85
+  &__wrapper-info
+    display: flex
+    align-items: center
+  &__like-group
+    margin-right: 20px
+  &__date-group
+    margin-right: 20px
+  &__bookmark-wrapper
+    width: 30px
+    height: 30px
+    position: absolute
+    top: 150px
+.navigation
+  &__to-main
+    display: flex
+    align-items: center
+    margin-right: 30px
+  &__icon
+    width: 17px
+    height: 19px
+    margin-right: 7px
+    &:last-child
+      margin-right: 0
+      margin-left: 7px
+    &--padding
+      padding-bottom: 3px
+  &__name
+    height: 20px
+    font-family: Lato
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: $light
+  &__to-back
+    display: flex
+    align-items: center
+    margin-right: 21px
+  &__forward
+    display: flex
+    align-items: center
