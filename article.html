@@ -170,7 +170,9 @@
               <span class="article__num-of-article">82 статьи</span>
             </div>
             <!-- /.article__card-wrapper -->
-            <a href="#" class="article__page-of-author">Страница автора</a>
+            <div class="article__page-of-author">
+              <span class="article__link-of-author">Страница автора</span>
+            </div>
 
           </div>
           <!-- /.article__card-author -->
@@ -202,57 +204,61 @@
         </div>
         <!-- /.article-wrapper -->
 
-        <div class="swiper-container article__swiper-container">
+        <div class="article__slider-wrapper">
+          <div class="swiper-container article__swiper-container">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img src="img/slider-article-1.png" alt="Слайд 1" class="article__slider-image">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/slider-article-1.png" alt="Слайд 1" class="article__slider-image">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-article-2.webp" alt="Слайд 2" class="article__slider-image">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-article-3.webp" alt="Слайд 3" class="article__slider-image">
+              </div> 
+              <div class="swiper-slide">
+                <img src="img/slider-article-4.webp" alt="Слайд 4" class="article__slider-image">
+              </div> 
             </div>
-            <div class="swiper-slide">
-              <img src="img/slider-article-2.webp" alt="Слайд 2" class="article__slider-image">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/slider-article-3.webp" alt="Слайд 3" class="article__slider-image">
-            </div> 
-            <div class="swiper-slide">
-              <img src="img/slider-article-4.webp" alt="Слайд 4" class="article__slider-image">
-            </div> 
-          </div>
-          <!-- /.swiper-wrapper -->
+            <!-- /.swiper-wrapper -->
 
-          <!-- If we need navigation buttons -->
-          <button class="article__button-slider article__button-slider--prev">
-            <img src="img/slider-prev-arrow.svg" alt="">
-          </button>
-          <button class="article__button-slider article__button-slider--next">
-            <img src="img/slider-next-arrow.svg" alt="">
-          </button>
+            <!-- If we need navigation buttons -->
+            <button class="article__button-slider article__button-slider--prev">
+              <img src="img/slider-prev-arrow.svg" alt="">
+            </button>
+            <button class="article__button-slider article__button-slider--next">
+              <img src="img/slider-next-arrow.svg" alt="">
+            </button>
+          </div>
+          <!-- /.swiper-container -->
+            
+          <div class="swiper-footer">
+            <div class="swiper-footer__text-wrapper">
+              <span class="text swiper-footer__text">
+                Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology
+              </span>
+            </div>
+            <!-- /.swiper-footer__text-wrapper -->
+
+            <div class="swiper-footer__author">
+              <img
+                src="img/Andrey.png"
+                alt="Разработчик: Андрей Вашигаев"
+                class="swiper-footer__avatar"
+              />
+              <div class="author swiper-footer__author-group">
+                <span class="author__name swiper-footer__name">Андрей Вашигаев</span>
+                <span class="author__position swiper-footer__position">Фотограф</span>
+              </div>
+            </div>
+            <!-- /.swiper-footer__author -->
+          </div>
+          <!-- /.swiper-footer -->
 
         </div>
-        <!-- /.swiper-container -->
-        <div class="swiper-footer">
-          <div class="swiper-footer__text-wrapper">
-            <span class="text swiper-footer__text">
-              Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology
-            </span>
-          </div>
-          <!-- /.swiper-footer__text-wrapper -->
-
-          <div class="swiper-footer__author">
-            <img
-              src="img/Andrey.png"
-              alt="Разработчик: Андрей Вашигаев"
-              class="swiper-footer__avatar"
-            />
-            <div class="swiper-footer__author-group">
-              <span class="author__name swiper-footer__name">Андрей Вашигаев</span>
-              <span class="author__position swiper-footer__position">Фотограф</span>
-            </div>
-          </div>
-          <!-- /.swiper-footer__author -->
-        </div>
-        <!-- /.swiper-footer -->
+        <!-- /.article-slider article-slider__wrapper -->
 
       </div>
       <!-- /.container -->
