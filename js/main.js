@@ -28,7 +28,7 @@ $(document).on("click", ".bookmark-path path", function () {
 });
 
 // Слайдер
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".hints__swiper-container", {
   // Optional parameters
   loop: true,
   autoplay: {
@@ -39,6 +39,18 @@ const swiper = new Swiper(".swiper-container", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+});
+
+// Слайдер статьи
+const swiperArticle = new Swiper('.article__swiper-container', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.article__button-slider--next',
+    prevEl: '.article__button-slider--prev ',
   },
 });
 

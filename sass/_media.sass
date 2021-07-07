@@ -212,16 +212,34 @@
       width: 140px
     &-card-wrapper
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 140px
+  .news
+    &__content
+      padding: 61px 74px 70px
+  .article
+    &-wrapper
+      padding: 61px 74px 30px
+    &__card-author
+      width: 235px
+    &__paragraph
+      width: 552px
+    &__swiper-container
+      height: 410px
 
 @media (min-width: 992px)
   .header
     &__link
       &:hover
         color: $hover_header_link
+      &--dark
+        &:hover
+          color: #4B5157
     &__button
       &:hover
         background-color: $hover_header_button
   .lifehacks
+    &__text
+      &:hover
+        color: #E5E5E5
     &__card
       &:not(:last-child):after
         content: ''
@@ -232,7 +250,47 @@
         background-color: #4B5157
       &:last-child
         margin-right: 25px
+  .content
+    &__social-network
+      &-wrapper
+        &:hover
+          opacity: 0.7
+    &__card,
+    &__main-card,
+    &__photo-card,
+    &__tags-tag
+      &:hover
+        background-color: #F5F5F5
+    &__checklist-link
+      &:hover
+        color: #E5E5E5
+    &__popular-card
+      &:hover
+        opacity: 0.8
   .content,
+  .main,
+  .money,
+  .subscribe
+    &__button
+      &:hover
+        background-color: #2f76da
+  .articles
+    &__card
+      &:hover
+        background-color: #F5F5F5
+    &__recent-card
+      &:hover
+        background-color: #E5E5E5
+  .hints
+    &__card
+      &-slider-button,
+      &-career-button
+        &:hover
+          background-color: #2f76da
+      &-1,
+      &-2
+        &:hover
+          background-color: #F5F5F5
   .footer
     &__link,
     &__text
@@ -242,6 +300,15 @@
       &-wrapper
         &:hover
           opacity: 0.7
+  .navigation
+    &__name
+      &:hover
+        color: #E5E5E5
+  .article
+    &__page-of-author
+      &:hover
+        background-color: #E5E5E5
+        border-radius: 0 0 10px 10px
 
 @media (max-width: 992px)
   .container
@@ -261,9 +328,9 @@
       margin-top: -2px
       padding: 10px 32px 10px 28px
       font-size: 12px
-  .menu-wrapper
-    margin-top: 5px
-    max-width: 521px
+    .menu-wrapper
+      margin-top: 5px
+      max-width: 521px
   .main
     &__background
       height: 352px
@@ -615,6 +682,30 @@
     &__link
       &:last-child
         margin-right: 0
+  .news
+    &__top-wrapper
+      margin-bottom: 42px
+    &__title
+      width: 100%
+      height: 191px
+      font-size: 51px
+      line-height: 63px
+    &__content
+      padding: 61px 0px 70px
+    &__bookmark-wrapper
+      top: 57px
+      left: 100px
+    &__text
+      width: 100%
+      max-height: 56px
+      font-size: 15px
+      line-height: 26px
+  .article
+    &-wrapper
+      padding: 61px 0 30px
+    &__paragraph
+      font-size: 15px
+      line-height: 25px
 
 @media (max-width: 767px)
   .container
@@ -1092,6 +1183,36 @@
       line-height: 20px
       height: 32px
       padding: 6px 25px
+  .news
+    &__bookmark
+      width: 24px
+      height: 24px
+    &__title
+      font-size: 36px
+      line-height: 47px
+      height: 141px
+    &__text
+      max-height: 78px
+  .article
+    &__paragraph
+      width: 100%
+    &__swiper-container
+      height: 350px
+    &__button-slider
+      width: 60px
+    .swiper-footer
+      &__avatar
+        width: 32px
+        height: 32px
+      &__name
+        font-size: 12px
+      &__position
+        font-size: 10px
+      &__author
+        width: 225px
+        padding: 13px 24px 12px 24px
+      &__text-wrapper
+        padding: 26px 24px 24px
 
 @media (max-width: 567px)
   .main
@@ -1246,6 +1367,73 @@
   .modal
     .input
       width: 210px
+  .article
+    &-wrapper
+      padding-bottom: 0
+    &__card-author
+      top: -99px
+      left: 42%
+      transform: translateX(-50%)
+      float: none
+    &__block-foreword
+      margin-top: 77px
+    &__author
+      font-size: 17px
+    &__swiper-container
+      height: 250px
+    &__button-slider
+      width: 48px
+      &--next
+        right: 5px
+      &--prev
+        left: 5px
+    .swiper-footer
+      flex-direction: column
+      &__name
+        margin-bottom: 0
+      &__text-wrapper
+        padding: 15px
+      &__author
+        width: 100%
+        padding: 8px 15px
+        border-top: 1px solid #D9DADB
+        border-left: none
+
+  .news
+    &__content
+      padding-top: 35px
+    &__title
+      font-size: 29px
+      line-height: 39px
+      height: 119px
+    &__text
+      max-height: 130px
+    &__top-wrapper
+      flex-direction: column
+    &__navigation
+      order: -1
+      width: 100%
+    &__bookmark-wrapper
+      top: 91px
+      left: 86px
+    &__tag
+      margin-top: 43px
+      height: 12px
+      align-self: end
+  .navigation
+    &__to-main
+      flex-grow: 1
+    &__name
+      font-size: 13px
+      line-height: 24px
+@media (max-width: 426px)
+  .news
+    &__title
+      height: 158px
+@media (max-width: 362px)
+  .news
+    &__title
+      height: 195px
 
 @media (max-width: 992px) and (min-width: 767px)
   .lifehacks

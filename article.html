@@ -58,23 +58,42 @@
     <section class="news">
       <div class="container">
         <div class="news__content">
+          <div class="news__bookmark-wrapper">
+            <svg
+              class="jquery news__bookmark"
+              width="30"
+              height="30"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="bookmark-path"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z"
+                fill="#BCBFC2"
+              />
+            </svg>
+          </div>
+          <!-- ./news__bookmark-wrapper -->
           <div class="news__top-wrapper">
             <span class="tag tag--new news__tag">Новости</span>
             <div class="news__navigation navigation">
-              <div class="navigation__to-main">
+              <a href="index.html" class="navigation__to-main">
                 <img class="navigation__icon navigation__icon--padding" src="img/Home.svg" alt="Иконка: На главную">
-                <a href="index.html" class="navigation__name">На главную</a>
-              </div>
+                <span class="navigation__name">На главную</span>
+              </a>
               <!-- /.navigation__to-main -->
-              <div class="navigation__to-back">
+              <a href="#" class="navigation__to-back">
                 <img class="navigation__icon" src="img/nav-arrow-back.svg" alt="Иконка: Назад">
-                <a href="#" class="navigation__name">Назад</a>
-              </div>
+                <span class="navigation__name">Назад</span>
+              </a>
               <!-- /.navigation__to-back -->
-              <div class="navigation__forward">
-                <a href="#" class="navigation__name">Вперед</a>
+              <a href="#" class="navigation__forward">
+                <span class="navigation__name">Вперед</span>
                 <img class="navigation__icon" src="img/nav-arrow.svg" alt="Иконка: Вперед">
-              </div>
+              </a>
               <!-- /.navigation__forward -->
             </div>
             <!-- /.news__navigation -->
@@ -107,7 +126,7 @@
               <span
                 class="
                   like-group__number like-group__number--light
-                  content__like-number
+                  news__like-number
                 "
                 >830</span
               >
@@ -122,7 +141,7 @@
               <span
                 class="
                   message-group__number message-group__number--light
-                  content__message-number
+                  news__message-number
                 "
                 >19</span
               >
@@ -132,28 +151,113 @@
           <!-- /.news__wrapper-info -->
         </div>
         <!-- /.news__content -->
-        <div class="news__bookmark-wrapper">
-            <svg
-              class="jquery"
-              width="30"
-              height="30"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                class="bookmark-path"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z"
-                fill="#BCBFC2"
-              />
-            </svg>
-          </div>
+
+
       </div>
       <!-- /.container -->
     </section>
     <!-- /.news -->
+
+    <section class="article">
+      <div class="container">
+        <div class="article-wrapper">
+
+          <div class="article__card-author">
+            <div class="article__card-wrapper">
+              <img src="img/mira.png" alt="Мира Стахова" class="article__author-image">
+              <strong class="article__author">Мира Стахова</strong>
+              <span class="article__position">Фрилансер</span>
+              <span class="article__num-of-article">82 статьи</span>
+            </div>
+            <!-- /.article__card-wrapper -->
+            <a href="#" class="article__page-of-author">Страница автора</a>
+
+          </div>
+          <!-- /.article__card-author -->
+
+          <div class="article__block article__block-foreword">
+              <div class="article__letter-wrapper">
+                <img src="img/m.svg" alt="М">
+              </div>
+              <p class="article__paragraph">
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития.<br>
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что&nbsp;постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития.
+              </p>
+          </div>
+          <!-- /.article__block -->
+
+          <div class="article__block">
+            <h2 class="title title--big_black article__title">Введение НПД в РФ</h2>
+            <p class="article__paragraph">
+              Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что&nbsp;постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации 
+            </p>
+            <p class="article__paragraph">
+              Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, 
+            </p>
+            <p class="article__paragraph">
+              Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что&nbsp;постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации 
+            </p>
+          </div>
+          <!-- /.article__block -->
+        </div>
+        <!-- /.article-wrapper -->
+
+        <div class="swiper-container article__swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/slider-article-1.png" alt="Слайд 1" class="article__slider-image">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider-article-2.webp" alt="Слайд 2" class="article__slider-image">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/slider-article-3.webp" alt="Слайд 3" class="article__slider-image">
+            </div> 
+            <div class="swiper-slide">
+              <img src="img/slider-article-4.webp" alt="Слайд 4" class="article__slider-image">
+            </div> 
+          </div>
+          <!-- /.swiper-wrapper -->
+
+          <!-- If we need navigation buttons -->
+          <button class="article__button-slider article__button-slider--prev">
+            <img src="img/slider-prev-arrow.svg" alt="">
+          </button>
+          <button class="article__button-slider article__button-slider--next">
+            <img src="img/slider-next-arrow.svg" alt="">
+          </button>
+
+        </div>
+        <!-- /.swiper-container -->
+        <div class="swiper-footer">
+          <div class="swiper-footer__text-wrapper">
+            <span class="text swiper-footer__text">
+              Geostatistics deal with quantitative data analysis, specifically the application of statistical methodology
+            </span>
+          </div>
+          <!-- /.swiper-footer__text-wrapper -->
+
+          <div class="swiper-footer__author">
+            <img
+              src="img/Andrey.png"
+              alt="Разработчик: Андрей Вашигаев"
+              class="swiper-footer__avatar"
+            />
+            <div class="swiper-footer__author-group">
+              <span class="author__name swiper-footer__name">Андрей Вашигаев</span>
+              <span class="author__position swiper-footer__position">Фотограф</span>
+            </div>
+          </div>
+          <!-- /.swiper-footer__author -->
+        </div>
+        <!-- /.swiper-footer -->
+
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.article -->
 
     <footer class="footer" id="footer">
       <div class="container">

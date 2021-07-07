@@ -14,7 +14,7 @@
     background: rgba($dark,.75)
   &__content
     position: relative
-    padding: 61px 98px 72px
+    padding: 61px 98px 70px
   &__top-wrapper
     margin-bottom: 50px
     display: flex
@@ -27,11 +27,13 @@
     width: 750px
     height: 220px
     margin-bottom: 21px
-    overflow: auto
+    flex-grow: 1
+    overflow: hidden
   &__text
     width: 632px
-    height: 90px
+    max-height: 90px
     margin-bottom: 42px
+    margin-top: 0
     overflow: auto
     font-family: Lato
     font-style: normal
@@ -52,6 +54,8 @@
     height: 30px
     position: absolute
     top: 150px
+    left: 0
+    cursor: pointer
 .navigation
   &__to-main
     display: flex
