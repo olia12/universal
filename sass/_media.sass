@@ -217,13 +217,16 @@
       padding: 61px 74px 70px
   .article
     &-wrapper
-      padding: 61px 74px 30px
+      padding: 0 74px
     &__card-author
       width: 235px
     &__paragraph
       width: 552px
     &__swiper-container
       height: 410px
+    &__slider-wrapper
+      padding-top: 0
+      padding-bottom: 30px
 
 @media (min-width: 992px)
   .header
@@ -702,11 +705,19 @@
       line-height: 26px
   .article
     &-wrapper
-      padding: 61px 0 30px
+      padding: 0
     &__paragraph
       font-size: 15px
       line-height: 25px
-
+    &__card-material
+      top: -77px
+    &__title
+      font-size: 16px
+      &-big
+        font-size: 16px
+      &-wrapper
+        padding-bottom: 32px
+        padding-top: 43px
 @media (max-width: 767px)
   .container
     max-width: 700px
@@ -1218,6 +1229,7 @@
   .swiper-footer
     &__text
       max-height: 45px
+  .article
 
 @media (max-width: 567px)
   .main
@@ -1373,8 +1385,6 @@
     .input
       width: 210px
   .article
-    &-wrapper
-      padding-bottom: 0
     &__card-author
       top: -99px
       left: 42%
@@ -1392,6 +1402,14 @@
         right: 5px
       &--prev
         left: 5px
+    &__card-material
+      margin-left: 0
+      margin-top: 105px
+      margin-bottom: -42px
+      float: none
+    &__title-big
+      &:before
+        left: -10px
     .swiper-footer
       flex-direction: column
       &__name
@@ -1403,7 +1421,6 @@
         padding: 8px 15px
         border-top: 1px solid #D9DADB
         border-left: none
-
   .news
     &__content
       padding-top: 35px
@@ -1424,13 +1441,16 @@
     &__tag
       margin-top: 43px
       height: 12px
-      align-self: end
+      align-self: start
   .navigation
     &__to-main
       flex-grow: 1
     &__name
       font-size: 13px
       line-height: 24px
+  .card-material__wrapper
+    margin-right: 0
+
 @media (max-width: 426px)
   .news
     &__title

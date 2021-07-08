@@ -1,7 +1,8 @@
 .article
+  padding-top: 63px
   background-color: $light
   &-wrapper
-    padding: 63px 98px 28px
+    padding: 0 98px
   &__block
     &-foreword
       margin-bottom: 43px
@@ -77,13 +78,28 @@
     font-size: 18px
     line-height: 30px
     width: 623px
+    &--margin
+      margin-bottom: 0
   &__title
-    margin-bottom: 31px
-    max-width: 624px
-    max-height: 64px
+    margin-bottom: 32px
     overflow: auto
-    font-size: 25px
-    line-height: 32px
+    &-big
+      position: relative
+      z-index: 2
+      &:before
+        position: absolute
+        content: ""
+        top: -20px
+        left: -20px
+        background-image: url(../img/Quote.svg)
+        background-repeat: no-repeat
+        width: 70px
+        height: 70px
+        z-index: -1
+    &-wrapper
+      padding-bottom: 46px
+      padding-top: 80px
+      max-width: 623px
   &__swiper-container
     width: 100%
     height: 555px
@@ -106,7 +122,16 @@
     &--next
       right: 28px
   &__slider-wrapper
-    padding-bottom: 30px
+    padding-top: 28px
+    padding-bottom: 47px
+  &__card-material
+    position: relative
+    float: right
+    top: -157px
+    margin-top: 80px
+    margin-bottom: -59px
+    margin-left: 50px
+    right: -2px
 
 .swiper-footer
   display: flex
@@ -154,3 +179,36 @@
     height: 15px
     min-width: 116px
     overflow: hidden
+
+.card-material
+  &__wrapper
+    display: flex
+    flex-direction: column
+    width: 263px
+    &-info
+      display: flex
+  &__title
+    margin-bottom: 6px
+    max-height: 50px
+    overflow: auto
+    &-up
+      max-height: 25px
+      margin-bottom: 20px
+      overflow: auto
+  &__image-wrapper
+    height: 180px
+    margin-bottom: 15px
+    object-fit: cover
+    border-radius: 10px
+    overflow: hidden
+  &__text
+    max-height: 100px
+    margin-top: 0
+    margin-bottom: 20px
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+    overflow: auto
