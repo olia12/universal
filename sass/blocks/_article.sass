@@ -3,7 +3,7 @@
   background-color: $light
   &-wrapper
     padding: 0 98px
-  &__block
+  &__wrapper
     &-foreword
       margin-bottom: 43px
   &__card-author
@@ -132,7 +132,26 @@
     margin-bottom: -59px
     margin-left: 50px
     right: -2px
+  &__tags
+    &-card
+      display: flex
+      flex-wrap: wrap
+      padding-top: 44px
+      padding-bottom: 58px
 
+    &-tag
+      text-decoration: none
+      color: #262D33
+      font-weight: 900
+      border: 1px solid #D9DADB
+      border-radius: 5px
+      padding: 4px 14px
+      margin: 0 10px 0 0
+      cursor: pointer
+    &-delimiter
+      width: 69%
+      height: 1px
+      background-color: #d9dadb
 .swiper-footer
   display: flex
   border: 1px solid #D9DADB
@@ -179,7 +198,6 @@
     height: 15px
     min-width: 116px
     overflow: hidden
-
 .card-material
   &__wrapper
     display: flex

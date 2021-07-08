@@ -52,6 +52,9 @@ const swiperArticle = new Swiper('.article__swiper-container', {
     nextEl: '.article__button-slider--next',
     prevEl: '.article__button-slider--prev ',
   },
+    keyboard: {
+      enabled: true,
+    }
 });
 
 //Якоря
