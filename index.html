@@ -79,7 +79,7 @@
                     >javascript</strong
                   >
                   <h1 class="main__title">Расширение Chrome<br />защищает от атак</h1>
-                  <button class="button main__button" formaction="article.html">
+                  <button class="button main__button button-click" formaction="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -104,7 +104,7 @@
                   <h1 class="main__title">
                     Как использовать CSS float после того, как вышел Flexbox
                   </h1>
-                  <button class="button main__button" formaction="article.html">
+                  <button class="button main__button button-click" formaction="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -128,7 +128,7 @@
                   <h1 class="main__title">
                     Правильно вставляем картинку<br />на сайт для Retina дисплея
                   </h1>
-                  <button class="button main__button" formaction="article.html">
+                  <button class="button main__button button-click" formaction="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -152,7 +152,7 @@
                     >web design</strong
                   >
                   <h1 class="main__title">ТОП-10 плагинов для Figma</h1>
-                  <button class="button main__button" formaction="article.html">
+                  <button class="button main__button button-click" formaction="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -176,7 +176,7 @@
                   <h1 class="main__title">
                     Возможности CSS Grid Layout, которые уже можно применять
                   </h1>
-                  <button class="button main__button" formaction="article.html">
+                  <button class="button main__button button-click" formaction="article.html">
                     Читать далее
                     <img src="img/arrow.svg" alt="Стрелка" class="main__arrow" />
                   </button>
@@ -533,7 +533,7 @@
         <h1 class="title title--large_light money__title">
           Расследование недели: сколько зарабатывает веб разработчик в Москве
         </h1>
-        <button class="button money__button" formaction="article.html">
+        <button class="button money__button button-click" formaction="article.html">
           Читать статью
           <img src="img/arrow.svg" alt="Стрелка" class="money__arrow" />
         </button>
@@ -1103,7 +1103,7 @@
               <h2 class="title title--large_light hints__card-slider-title">
                 Выбор читателей: где удобнее работать фрилансеру
               </h2>
-              <button class="button hints__card-slider-button" formaction="article.html">
+              <button class="button hints__card-slider-button button-click" formaction="article.html">
                 <img
                   src="img/Images.svg"
                   alt=""
@@ -1187,7 +1187,7 @@
                   Каверзные и не очень вопросы, которых боятся новички, когда идут на
                   собеседование
                 </p>
-                <button class="button hints__card-career-button" formaction="article.html">
+                <button class="button hints__card-career-button button-click" formaction="article.html">
                   Читать далее
                   <img
                     src="img/arrow.svg"
@@ -1232,13 +1232,13 @@
       <div class="container">
         <div class="subscribe-wrapper">
           <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
-          <form action="send.php" method="POST" class="subscribe__form">
+          <form action="send.php" method="POST" class="form subscribe__form">
             <input
               type="email"
               class="subscribe__input"
               placeholder="Email"
               name="email"
-              required=""
+              required
             />
             <button class="button subscribe__button" type="submit">Подписаться</button>
           </form>
@@ -1393,23 +1393,28 @@
           <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h2 class="title modal__title">Обратная связь</h2>
-        <form action="#" class="form modal__form">
+        <form action="send.php" method="POST" class="form modal__form">
           <span class="text modal__name">Тема</span>
-          <select required class="text input modal__select">
+          <select class="text input modal__select">
             <option value="" class="modal__select-selected"  disabled selected hidden>Выберите тему</option>
             <option class="modal__option" value="">Тема 1</option>
             <option class="modal__option" value="">Тема 2</option>
           </select>
           <span class="text modal__name">Сообщение</span>
-          <textarea class="text modal__message input"></textarea>
+          <div class="modal__message-wrapper">
+            <textarea class="text modal__message input" name="message" minlength="2" required=""></textarea>
+          </div>
           <span class="text modal__name">Email</span>
-          <input type="text" class="text input modal__email">
+          <div class="modal__email-wrapper">
+            <input type="email" class="text input modal__email" name="email" required>
+          </div>
+          
           <div class="modal__data-processing data-processing">
             <input class="data-processing__checkbox" type="checkbox" name="data_processing" id="data_processing" checked>
             <label for="data_processing" class="text data-processing__label">Согласен с обработкой данных</label>
           </div>
           <!-- /.modal__data-processing -->
-          <button class="button modal__button">Отправить</button>
+          <button class="button modal__button" type="submit">Отправить</button>
         </form>
       </div>
       <!-- /.modal__dialog -->
@@ -1420,6 +1425,7 @@
 
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

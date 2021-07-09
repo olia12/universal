@@ -293,6 +293,7 @@
     &__recent-card
       &:hover
         background-color: #E5E5E5
+
   .hints
     &__card
       &-slider-button,
@@ -321,6 +322,21 @@
       &:hover
         background-color: #E5E5E5
         border-radius: 0 0 10px 10px
+    &__tags-tag
+      &:hover
+        background-color: #F5F5F5
+  .support
+    &__share-wrapper
+      &:hover
+        opacity: 0.7
+  .comments
+    &__add-comment,
+    &__button
+      &:hover
+        background-color: #F5F5F5
+      &-submit
+        &:hover
+          background-color: #2f76da
 
 @media (max-width: 992px)
   .container
@@ -750,8 +766,49 @@
         margin-left: 0
       &:last-child
         margin-right: 0
+  .comments
+    &-wrapper
+      padding: 0
+    &__card
+      width: 100%
+      padding-right: 20px
+    &__message
+      width: 100%
+      &-input
+        width: 100%
+    &__button
+      display: flex
+      align-items: center
+      width: 100%
+      padding-left: 20px
+      padding-right: 20px
+      justify-content: center
+    &__title
+      font-size: 32px
+    &__number
+      font-size: 32px
+      margin-top: 3px
+    &__text
+      font-size: 16px
+      line-height: 27px
+      max-height: 87px
+    &__recall
+      margin-left: 17px
+      padding-right: 17px
+      width: 100%
+      &::after
+        content: none
+      &::before
+        content: none
+    &__recall-title
+      font-size: 16px
+    &__name
+      font-size: 15px
+      line-height: 21px
 
 @media (max-width: 767px)
+  label.invalid
+    position: absolute
   .container
     max-width: 700px
     width: 87%
@@ -1282,8 +1339,46 @@
         margin-right: 19px
       &:nth-child(3)
         margin-right: 19px
+  .comments
+    &__image-wrapper--user
+      margin: 70px 4px 140px 16px
+    &__image-wrapper
+      width: 65px
+      height: 65px
+    &__text
+      font-size: 15px
+      line-height: 25px
+      max-height: 100px
+    &__name
+      font-size: 14px
+      line-height: 17px
+    &__card
+      &--answer
+        padding-left: 55px
+    &__title
+      font-size: 22px
+    &__number
+      font-size: 20px
+    &-up-row
+      padding-top: 10px
+      padding-bottom: 10px
+    &__message-input
+      height: 150px
+      font-size: 15px
+      line-height: 25px
 
 @media (max-width: 567px)
+  .thank-you
+    &__title
+      font-size: 20px
+      line-height: 31px
+      padding-bottom: 25px
+    &__button
+      max-width: 180px
+      max-height: 32px
+      padding: 11px 20px
+      font-size: 10px
+      line-height: 20px
   .main
     &__tab
       height: 72px
@@ -1519,6 +1614,44 @@
         margin-right: 0
       &:nth-child(3)
         margin-right: 0
+  .comments
+    &__recall
+      width: 100%
+    &__button-submit
+      font-size: 10px
+      line-height: 20px
+      max-height: 32px
+      padding: 6px 20px
+      margin: auto
+    &__recall-title
+    &__message-input
+      width: 100%
+    &__image-wrapper
+      display: none
+    &__card
+      padding-right: 0
+      &--answer
+        padding-left: 20px
+    &__comment-info
+      margin-top: 12px
+    &__name
+      font-size: 12px
+      line-height: 16px
+    &-up-row
+      flex-wrap: wrap
+    &__title
+      font-size: 16px
+    &__number
+      margin-right: 15px
+      font-size: 14px
+    &__add-comment
+      font-size: 13px
+      line-height: 17px
+    &__text
+      max-height: 150px
+    &__image-wrapper
+      width: 35px
+      height: 35px
 
 @media (max-width: 426px)
   .news

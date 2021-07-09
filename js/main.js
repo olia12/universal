@@ -12,6 +12,8 @@ $(document).ready(function () {
   });
 });
 
+
+
 // Открытие меню мобильного
 var menuButton = document.querySelector(".header__button-menu");
 menuButton.addEventListener("click", function () {
@@ -89,7 +91,7 @@ $(window).on("resize", function () {
 });
 
 //Переход на статью при нажатии на кнопку
-$(".button").on("click", function () {
+$(".button-click").on("click", function () {
   window.location.href = $(this).attr("formaction");
 });
 
@@ -119,3 +121,38 @@ var modalButton = $("[data-togle=modal]");
 		closeModal(e);
 	}
 })
+
+//открытие скрытых комментарией
+var commentsButton = $("[data-togle=comments]");
+  commentsButton.on("click", openComments);
+
+  function openComments(){
+    var commentOverlay = $(".comments__hidden");
+    commentOverlay.addClass('comments__hidden--visible');
+  }
+
+
+  // Обработка форм
+  $('.form').each(function(){
+      $(this).validate({
+        errorClass: "invalid",
+
+        messages: {
+          email: {
+            required: "Введите email",
+            email: "Email должен быть: name@domain.com"
+          },
+          message: {
+            required: "Введите сообщение",
+            minlength: "Текст должен быть как минимум 2 символа"
+          },
+          recall: {
+            required: "Введите сообщение",
+            minlength: "Текст должен быть как минимум 100 символов"
+          },
+        },
+      });
+    });
+
+//  AOS.init();
+ 
